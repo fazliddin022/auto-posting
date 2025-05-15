@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: telegram-daily-post
+    schedule: "0 4 * * *"   # каждый день в 09:00 UTC
+    env: python
+    buildCommand: ""
+    startCommand: "python bot.py"
